@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "wrangler pages deploy dist",
+    "deploy": "wrangler pages deploy dist --project-name old-street-chiropractic",
     "preview": "vite preview"
   },
   "dependencies": {
