@@ -1,10 +1,10 @@
 <template>
   <Header />
-  <section class="bg-slate-900 py-20 px-6 text-center">
+  <section class="bg-slate-900 py-24 px-6 text-center">
     <div class="max-w-6xl mx-auto flex flex-col items-center">
       <!-- Hero Content with aligned Logo -->
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mb-8">
-        <div class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] flex items-center justify-center text-white shrink-0">
+        <div class="w-30 h-30 md:w-45 md:h-45 flex items-center justify-center text-white shrink-0">
           <img src="/spine.svg?v=2" alt="Old Street Chiropractic Logo" class="w-full h-full object-contain">
         </div>
         <h1 class="text-5xl md:text-7xl font-bold text-white">
@@ -56,17 +56,17 @@
         </div>
         <div class="bg-white rounded-2xl p-8 shadow-md transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-xl">
           <div class="w-14 h-14 rounded-xl grid place-items-center text-2xl bg-gray-100 mb-6">🛡️</div>
-          <h3 class=".text-xl font-semibold">Wellness Care</h3>
+          <h3 class="text-xl font-semibold">Wellness Care</h3>
           <p>Preventive treatments to maintain optimal health and mobility.</p>
         </div>
       </div>
     </section>
 
-
     <!-- About Section -->
-    <section id="about" class="max-w-4xl mx-auto bg-white rounded-3xl p-12 shadow-lg my-16">
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto bg-white rounded-3xl p-12 shadow-lg">
       <header class="grid md:grid-cols-[160px_1fr] gap-8 mb-10 items-center">
-        <div class="w-40 h-40 rounded-2xl overflow-hidden flex-shrink-0">
+        <div class="w-40 h-40 rounded-2xl overflow-hidden shrink-0">
           <img
             src="/tanesa-profile.jpeg"
             alt="Dr Tanesa Mohan"
@@ -122,7 +122,8 @@
           and pregnancy-related spinal conditions.
         </p>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Location Section -->
     <section id="location" class="py-24 px-6 text-center">
@@ -150,7 +151,10 @@
     </section>
 
     <!-- Calendly inline widget begin -->
-    <section id="booking" v-if="cookieConsent === 'true'">
+    <section id="booking" v-if="cookieConsent === 'true'" class="py-24 px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-5xl my-4 font-bold">Book Your Appointment</h2>
+      </div>
       <div class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
     </section>
     <!-- Calendly inline widget end -->
