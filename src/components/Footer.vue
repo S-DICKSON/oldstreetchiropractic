@@ -20,16 +20,22 @@
           <h4 class="text-lg font-semibold mb-6 text-white uppercase tracking-wider text-sm">Contact Us</h4>
           <ul class="space-y-4">
             <li class="flex items-start gap-3">
-              <span class="text-indigo-400 flex-shrink-0 mt-0.5">📍</span>
-              <span class="text-slate-400">Old Street, London</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Light%20Centre%20Old%20Street%2C%205%20Singer%20St%2C%20London%20EC2A%204BQ" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 text-slate-400">
+                <span class="text-indigo-400 flex-shrink-0 mt-0.5">📍</span>
+                <span>Old Street, London</span>
+              </a>
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-indigo-400 flex-shrink-0">📞</span>
-              <a href="tel:07367292202" class="text-slate-400">07367292202</a>
+              <a href="tel:07367292202" class="flex items-center gap-3 text-slate-400">
+                <span class="text-indigo-400 flex-shrink-0">📞</span>
+                <span>07367292202</span>
+              </a>
             </li>
             <li class="flex items-center gap-3">
-              <span class="text-indigo-400 flex-shrink-0">✉️</span>
-              <a href="mailto:tanesa@oldstreetchiropractic.co.uk" class="text-slate-400">tanesa@oldstreetchiropractic.co.uk</a>
+              <a href="mailto:tanesa@oldstreetchiropractic.co.uk" class="flex items-center gap-3 text-slate-400">
+                <span class="text-indigo-400 flex-shrink-0">✉️</span>
+                <span>tanesa@oldstreetchiropractic.co.uk</span>
+              </a>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-indigo-400 flex-shrink-0 mt-0.5">🕒</span>

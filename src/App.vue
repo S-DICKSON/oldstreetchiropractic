@@ -116,8 +116,35 @@
       </div>
     </section>
 
+    <!-- Location Section -->
+    <section id="location" class="py-24 px-6 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-5xl my-4 font-bold">Our Location</h2>
+        <p class="mb-8">
+          Light Centre Old Street <br />
+          5 Singer St, London EC2A 4BQ
+        </p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe
+            src="https://maps.google.com/maps?q=5%20Singer%20St%2C%20London%20EC2A%204BQ&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p class="mt-4 text-slate-500">
+          ( Cowper Street exit from Old Street Station )
+        </p>
+      </div>
+    </section>
+
     <!-- Calendly inline widget begin -->
-    <div v-if="cookieConsent === 'true'" class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+    <section id="booking" v-if="cookieConsent === 'true'">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+    </section>
     <!-- Calendly inline widget end -->
 
   </main>

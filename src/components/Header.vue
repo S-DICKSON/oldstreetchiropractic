@@ -90,6 +90,7 @@ const isMenuOpen = ref(false);
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
+  { label: "Location", href: "#location" },
   { label: "Contact", href: "#contact" },
 ];
 
