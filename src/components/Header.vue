@@ -3,10 +3,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2">
-          <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center">
-            <span class="text-white font-bold text-lg">OS</span>
-          </div>
+        <a href="#" class="flex items-center gap-3">
           <span class="text-xl font-semibold text-white hidden sm:block">
             Old Street Chiropractic
           </span>

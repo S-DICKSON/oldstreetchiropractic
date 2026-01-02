@@ -1,10 +1,16 @@
 <template>
   <Header />
   <section class="bg-slate-900 py-20 px-6 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
-        Old Street Chiropractic
-      </h1>
+    <div class="max-w-6xl mx-auto flex flex-col items-center">
+      <!-- Hero Content with aligned Logo -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mb-8">
+        <div class="w-[120px] h-[120px] md:w-[180px] md:h-[180px] flex items-center justify-center text-white shrink-0">
+          <img src="/spine.svg?v=2" alt="Old Street Chiropractic Logo" class="w-full h-full object-contain">
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold text-white">
+          Old Street Chiropractic
+        </h1>
+      </div>
       <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl mx-auto">
         Restore. Move. Live.
       </p>
@@ -68,7 +74,9 @@
           />
         </div>
         <div class="about-title">
-          <h2 class="text-4xl mb-2">About</h2>
+          <div class="flex items-center gap-4 mb-2">
+            <h2 class="text-4xl">About</h2>
+          </div>
           <div class="text-xl font-semibold">Dr Tanesa Mohan</div>
           <div class="text-gray-500 mt-1">Doctor of Chiropractic, LRCC</div>
         </div>
