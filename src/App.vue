@@ -5,7 +5,7 @@
       <!-- Hero Content with aligned Logo -->
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mb-8">
         <div class="w-30 h-30 md:w-45 md:h-45 flex items-center justify-center text-white shrink-0">
-          <img src="/spine.svg?v=2" alt="Old Street Chiropractic Logo" class="w-full h-full object-contain">
+          <img src="/spine.svg?v=2" alt="Old Street Chiropractic Logo" class="w-full h-full object-contain" width="180" height="180">
         </div>
         <h1 class="text-5xl md:text-7xl font-bold text-white">
           Old Street Chiropractic
@@ -71,6 +71,9 @@
             src="/tanesa-profile.jpeg"
             alt="Dr Tanesa Mohan"
             class="w-full h-full object-cover object-[50%_0%]"
+            width="160"
+            height="160"
+            loading="lazy"
           />
         </div>
         <div class="about-title">
@@ -167,7 +170,7 @@
       <div class="text-sm md:text-base">
         <p class="text-gray-300 leading-relaxed">
           We use cookies and similar technologies, including necessary cookies to provide our website, and optional cookies to improve and personalize your experience, to understand website interactions (including clicks, cursor movement and screen recordings), and for marketing. This includes services like <span class="font-semibold text-white">Calendly</span> and may include others such as <span class="font-semibold text-white">Google Analytics</span> in the future. You may accept all or decline all optional cookies. To learn more, visit our 
-          <a href="/privacy-notice.html" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">privacy notice</a>.
+          <a href="/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">privacy notice</a>.
         </p>
       </div>
       <div class="flex flex-wrap gap-3 shrink-0">
@@ -200,6 +203,7 @@ const cookieConsent = ref(cookies.get('cookie-consent'));
 const acceptCookies = () => {
   cookies.set('cookie-consent', 'true', '1y');
   cookieConsent.value = 'true';
+  loadCalendly();
 };
 
 const declineCookies = () => {
@@ -207,6 +211,18 @@ const declineCookies = () => {
   cookieConsent.value = 'false';
 };
 
+const loadCalendly = () => {
+  if (document.getElementById('calendly-script')) return;
+  const script = document.createElement('script');
+  script.id = 'calendly-script';
+  script.src = 'https://assets.calendly.com/assets/external/widget.js';
+  script.async = true;
+  document.head.appendChild(script);
+};
+
 onMounted(() => {
+  if (cookieConsent.value === 'true') {
+    loadCalendly();
+  }
 });
 </script>
