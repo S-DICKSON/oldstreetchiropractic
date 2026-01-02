@@ -40,8 +40,11 @@
       </div>
 
       <!-- Bottom bar -->
-      <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500 text-sm">
+      <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
         <p>© 2026 Old Street Chiropractic. All rights reserved.</p>
+        <div>
+          <a href="/privacy-notice.html" class="hover:text-white transition-colors">Privacy Notice</a>
+        </div>
       </div>
     </div>
   </footer>
