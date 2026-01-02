@@ -117,7 +117,7 @@
     </section>
 
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+    <div v-if="cookieConsent === 'true'" class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
     <!-- Calendly inline widget end -->
 
   </main>
@@ -158,22 +158,9 @@ import Footer from './components/Footer.vue';
 const { cookies } = useCookies();
 const cookieConsent = ref(cookies.get('cookie-consent'));
 
-const loadCalendlyScript = () => {
-  const scriptId = 'calendly-script';
-  if (document.getElementById(scriptId)) {
-    return;
-  }
-  const script = document.createElement('script');
-  script.id = scriptId;
-  script.src = 'https://assets.calendly.com/assets/external/widget.js';
-  script.async = true;
-  document.body.appendChild(script);
-};
-
 const acceptCookies = () => {
   cookies.set('cookie-consent', 'true', '1y');
   cookieConsent.value = 'true';
-  loadCalendlyScript();
 };
 
 const declineCookies = () => {
@@ -182,8 +169,5 @@ const declineCookies = () => {
 };
 
 onMounted(() => {
-  if (cookieConsent.value === 'true') {
-    loadCalendlyScript();
-  }
 });
 </script>

@@ -25,11 +25,11 @@
             </li>
             <li class="flex items-center gap-3">
               <span class="text-indigo-400 flex-shrink-0">📞</span>
-              <span class="text-slate-400">07367292202</span>
+              <a href="tel:07367292202" class="text-slate-400">07367292202</a>
             </li>
             <li class="flex items-center gap-3">
               <span class="text-indigo-400 flex-shrink-0">✉️</span>
-              <span class="text-slate-400">tanesa@oldstreetchiropractic.co.uk</span>
+              <a href="mailto:tanesa@oldstreetchiropractic.co.uk" class="text-slate-400">tanesa@oldstreetchiropractic.co.uk</a>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-indigo-400 flex-shrink-0 mt-0.5">🕒</span>
