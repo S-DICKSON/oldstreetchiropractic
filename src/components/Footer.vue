@@ -10,6 +10,10 @@
           <p class="text-slate-400 leading-relaxed mb-6">
             Expert chiropractic care dedicated to helping you achieve optimal health and wellness.
           </p>
+          <div class="max-w-6xl mx-auto flex justify-start gap-8">
+            <img src="/BCA_Member_Logo_RGB.jpg" alt="BCA Member Logo" class="h-24">
+            <img src="/GCC_Im_Registered_RGB.png" alt="GCC Registered Logo" class="h-24">
+          </div>
         </div>
 
         <!-- Contact -->
@@ -19,7 +23,7 @@
             <li class="flex items-start gap-3">
               <a href="https://www.google.com/maps/search/?api=1&query=Light%20Centre%20Old%20Street%2C%205%20Singer%20St%2C%20London%20EC2A%204BQ" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 text-slate-400">
                 <span class="text-indigo-400 flex-shrink-0 mt-0.5">📍</span>
-                <span>Old Street, London</span>
+                <span>Light Centre Old Street, 5 Singer St, London EC2A 4BQ</span>
               </a>
             </li>
             <li class="flex items-center gap-3">
@@ -49,7 +53,7 @@
       </div>
 
       <!-- Bottom bar -->
-      <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+      <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm">
         <p>© 2026 Old Street Chiropractic. All rights reserved.</p>
         <div>
           <a href="/privacy" class="hover:text-white transition-colors">Privacy Notice</a>

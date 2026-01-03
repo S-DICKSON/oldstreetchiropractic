@@ -2,11 +2,7 @@
   <Header />
   <section class="bg-slate-900 py-24 px-6 text-center">
     <div class="max-w-6xl mx-auto flex flex-col items-center">
-      <!-- Hero Content with aligned Logo -->
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mb-8">
-        <div class="w-30 h-30 md:w-45 md:h-45 flex items-center justify-center text-white shrink-0">
-          <img src="/spine.svg?v=2" alt="Old Street Chiropractic Logo" class="w-full h-full object-contain" width="180" height="180">
-        </div>
         <h1 class="text-5xl md:text-7xl font-bold text-white">
           Old Street Chiropractic
         </h1>
@@ -14,6 +10,7 @@
       <p class="text-xl md:text-2xl text-slate-300 font-light max-w-2xl mx-auto">
         Restore. Move. Live.
       </p>
+
     </div>
   </section>
   <main>
@@ -81,7 +78,7 @@
             <h2 class="text-4xl">About</h2>
           </div>
           <div class="text-xl font-semibold">Dr Tanesa Mohan</div>
-          <div class="text-gray-500 mt-1">Doctor of Chiropractic, LRCC</div>
+          <div class="text-gray-600 mt-1">Doctor of Chiropractic, LRCC</div>
         </div>
       </header>
 
@@ -147,21 +144,46 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <p class="mt-4 text-slate-500">
+        <p class="mt-4 text-slate-600">
           ( Cowper Street exit from Old Street Station )
         </p>
       </div>
     </section>
 
     <!-- Calendly inline widget begin -->
-    <section id="booking" v-if="cookieConsent === 'true'" class="py-24 px-6">
-      <div class="text-center max-w-2xl mx-auto">
+    <section id="booking" class="py-24 px-6">
+      <div class="text-center max-w-2xl mx-auto mb-8">
         <h2 class="text-3xl md:text-5xl my-4 font-bold">Book Your Appointment</h2>
       </div>
-      <div class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+      
+      <div v-if="cookieConsent === 'true'" class="calendly-inline-widget" data-url="https://calendly.com/tanesa-oldstreetchiropractic?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+      
+      <div v-else-if="cookieConsent === 'false'" class="max-w-2xl mx-auto bg-slate-50 rounded-3xl p-8 md:p-12 text-center border border-slate-200">
+        <div class="text-4xl mb-6 text-slate-400">🍪</div>
+        <h3 class="text-2xl font-bold mb-4">Cookies Required to Book</h3>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          To provide our online booking service, we use a third-party tool (Calendly) that requires cookies to function correctly. You currently have optional cookies disabled.
+        </p>
+        <button 
+          @click="acceptCookies" 
+          class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+        >
+          Accept Cookies & Book Now
+        </button>
+      </div>
+      
+      <div v-else class="h-[400px] flex items-center justify-center">
+        <p class="text-slate-500 animate-pulse text-lg">Please manage your cookie preferences below to enable booking...</p>
+      </div>
     </section>
     <!-- Calendly inline widget end -->
 
+    <section class="py-12 px-6 text-center">
+      <div class="max-w-6xl mx-auto flex justify-center gap-8">
+        <img src="/BCA_Member_Logo_RGB.webp" alt="BCA Member Logo" class="h-24">
+        <img src="/GCC_Im_Registered_RGB.webp" alt="GCC Registered Logo" class="h-24">
+      </div>
+    </section>
   </main>
   <Footer id="contact" />
 
