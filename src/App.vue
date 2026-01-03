@@ -177,13 +177,6 @@
       </div>
     </section>
     <!-- Calendly inline widget end -->
-
-    <section class="py-12 px-6 text-center">
-      <div class="max-w-6xl mx-auto flex justify-center gap-8">
-        <img src="/BCA_Member_Logo_RGB.webp" alt="BCA Member Logo" class="h-24">
-        <img src="/GCC_Im_Registered_RGB.webp" alt="GCC Registered Logo" class="h-24">
-      </div>
-    </section>
   </main>
   <Footer id="contact" />
 

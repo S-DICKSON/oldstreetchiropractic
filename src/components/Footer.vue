@@ -11,8 +11,8 @@
             Expert chiropractic care dedicated to helping you achieve optimal health and wellness.
           </p>
           <div class="max-w-6xl mx-auto flex justify-start gap-8">
-            <img src="/BCA_Member_Logo_RGB.jpg" alt="BCA Member Logo" class="h-24">
-            <img src="/GCC_Im_Registered_RGB.png" alt="GCC Registered Logo" class="h-24">
+            <img src="/BCA_Member_Logo_RGB.webp" alt="BCA Member Logo" class="h-24">
+            <img src="/GCC_Im_Registered_RGB.webp" alt="GCC Registered Logo" class="h-24">
           </div>
         </div>
 
